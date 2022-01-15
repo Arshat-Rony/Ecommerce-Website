@@ -72,7 +72,14 @@
 
  .fa-align-justify {
      font-size: 1.3rem;
+     color: black;
 
+ }
+
+ .fa-cart-plus,
+ .fas.fa-search {
+
+     color: black;
  }
 
  .mobile-btn {
