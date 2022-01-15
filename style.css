@@ -1,0 +1,405 @@
+ /* ===================== google font link==================== */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;500;800&family=Outfit&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&family=Raleway:wght@500;600&family=Roboto:wght@400;500&family=Satisfy&family=The+Nautigal:wght@700&display=swap');
+
+ body {
+     font-family: 'Poppins', sans-serif;
+ }
+
+ :root {
+     --primary-color: #3A3A3A;
+     --secondary-color: #E02C6D;
+     --tertiary-color: #0A0826;
+     --font-color:
+ }
+
+ h1,
+ h2,
+ h3 {
+     color: var(--primary-color);
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
+ }
+
+ li {
+     list-style: none;
+
+ }
+
+ p {
+     color: rgba(0, 0, 0, 0.445);
+     padding: 0.8rem 0;
+ }
+
+
+ section:not(.header) {
+     margin: 6rem 2rem;
+ }
+
+ /* ============ header section  ============ */
+
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 0 2rem;
+ }
+
+
+
+ .nav-menu {
+     display: none;
+ }
+
+ nav ul {
+     display: flex;
+     align-items: center;
+ }
+
+ nav ul li {
+     padding: 0 1rem;
+ }
+
+ .mobile-menu {
+     display: none;
+
+
+ }
+
+ .fa-align-justify {
+     font-size: 1.3rem;
+
+ }
+
+ .mobile-btn {
+     border: none;
+     background-color: unset;
+ }
+
+ .mobile-btn:hover+.mobile-menu {
+     display: block;
+     position: absolute;
+     top: 4rem;
+     background-color: black;
+ }
+
+ .mobile-menu ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     margin-right: 2rem;
+ }
+
+ .mobile-menu ul li a {
+     color: white;
+ }
+
+
+ /* ====================header responsiveness ====================== */
+
+ @media(min-width:668px) {
+     .mobile-section {
+         display: none;
+
+     }
+
+     .nav-menu {
+         display: block;
+     }
+
+     .nav-cart {
+         display: flex;
+         align-items: center;
+     }
+ }
+
+
+ /* ================== hero section  ================ */
+
+ .hero-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .hero-detail {
+     text-align: center;
+     padding-top: 4rem;
+     transition: all 0.9s;
+ }
+
+ .hero-img img:hover {
+     transform: skew(10deg);
+ }
+
+ .btn-primary {
+     padding: 0.5rem 1.9rem;
+     font-weight: 600;
+     font-size: 1.3rem;
+     color: white;
+     background-color: var(--secondary-color);
+     border-radius: 30px;
+ }
+
+ .btn-primary a i {
+     color: white;
+     padding-left: 10px;
+
+ }
+
+ /* ========= cresponsive for hero section =============  */
+
+ @media(min-width:992px) {
+     .hero-section {
+         flex-direction: row-reverse;
+
+     }
+
+     .hero-detail {
+         text-align: start;
+         padding-right: 4rem;
+         padding-top: 0;
+
+     }
+ }
+
+
+ /*================== about section ===============  */
+
+ .logo-section {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+
+ .logo-section img {
+     padding: 2rem 0.6rem;
+ }
+
+ /*========== responsiveness for logo section  ==========*/
+
+ @media(min-width:992px) {
+     hr {
+         max-width: 80%;
+     }
+
+     .logo-section {
+         justify-content: center;
+     }
+
+     .logo-section img {
+         padding: 2rem 2rem;
+     }
+ }
+
+ /* ==============cards section ================= */
+
+ .cards-section {
+     position: relative;
+ }
+
+ .btn-secondary {
+     color: red;
+     font-weight: 600;
+     font-size: 1.3rem;
+     border: none;
+     background: none;
+     position: absolute;
+     right: 6rem;
+ }
+
+ .btn-secondary i {
+     color: red;
+ }
+
+ .cards {
+     text-align: center;
+     padding-bottom: 2rem;
+     margin: 2rem;
+ }
+
+ .card img {
+     width: 300px;
+     height: 256px;
+     transition: all 0.5s;
+
+ }
+
+ .card img:hover {
+     transform: scale(0.75) skew(-20deg);
+ }
+
+ .card {
+     text-align: center;
+     width: 329px;
+     height: 476px;
+     margin: 0 auto;
+
+ }
+
+ .card p {
+     color: var(--primary-color);
+ }
+
+ .fas.fa-star.filled {
+     color: #FB8200;
+ }
+
+ /*=========== responsveness for cards section  ===============*/
+
+
+ @media(min-width:768px) {
+     .cards-section {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .card img {
+         width: 250px;
+         height: 200px;
+
+     }
+
+     .card {
+         text-align: start;
+         margin: 0 auto;
+         padding: 1rem 1rem 1rem 2rem;
+         box-shadow: 1px 1px 5px 4px rgb(194 190 190);
+         margin-top: 1rem;
+         border-radius: 10px;
+         width: 280px;
+         height: 450px;
+
+     }
+
+ }
+
+ @media(min-width:1220px) {
+     .cards-section {
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     .card {
+         margin: 1.6rem 0.4rem;
+     }
+ }
+
+ @media(min-width:1400px) {
+     .cards-section {
+         width: 1200px;
+         margin: 0 auto;
+     }
+ }
+
+
+ /*=========== review section ======*/
+
+
+
+
+ .review h2 {
+     text-align: center;
+ }
+
+ .review {
+     text-align: center;
+ }
+
+ .review-img img {
+     width: 60px;
+     height: auto;
+ }
+
+ .review-img {
+     display: flex;
+     align-items: center;
+ }
+
+ .review-img h3 {
+     padding-left: 1rem;
+     padding-top: 2rem;
+ }
+
+ .reviews {
+     width: 229px;
+     margin: 0 auto;
+
+ }
+
+ .reviews p {
+     color: rgba(0, 0, 0, 0.39);
+ }
+
+
+
+
+
+ @media(min-width:668px) {
+     .review-section {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .review {
+         text-align: start;
+     }
+
+     .reviews {
+         box-shadow: 1px 1px 5px 4px rgb(194 190 190);
+         padding: 1rem;
+         border-radius: 10px;
+         margin-top: 1.5rem;
+     }
+ }
+
+ @media(min-width:992px) {
+     .review-section {
+         grid-template-columns: repeat(3, 1fr);
+     }
+ }
+
+ @media(min-width:1200px) {
+     .reviews {
+         width: 300px;
+     }
+
+ }
+
+ @media(min-width:1400px) {
+     .reviews {
+         width: 400px;
+     }
+
+ }
+
+
+
+ /*============== footer  section================ */
+
+ #footer {
+     margin: 0;
+ }
+
+ footer {
+     text-align: center;
+     padding: 1rem 0;
+     background: var(--tertiary-color);
+
+ }
+
+ footer h3,
+ p,
+ i {
+     color: white;
+     padding: 0;
+ }
+
+ footer i {
+     padding-left: 1rem;
+ }
